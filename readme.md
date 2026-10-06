@@ -1,32 +1,20 @@
-### Java Template Repository
+# AOP Practice — Java
 
-### compile
+Репозиторій практичних робіт з програмування.
+
+## Практичні роботи
+
+- [Практична 1](extra/practice-1/)
+- [Практична 2](extra/practice-2/)
+
+Усі наступні практичні роботи додаються в `extra/practice-N/`.
+
+## Maven
 
 ```shell
 mvn compile
-```
-
-### clean
-
-```shell
 mvn clean
-```
-
-### test
-
-```shell
 mvn test
-```
-
-### reformat code
-
-```shell
 mvn spotless:apply
-```
-
-### check formatting
-
-```shell
 mvn spotless:check
 ```
-
