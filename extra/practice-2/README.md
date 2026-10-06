@@ -12,8 +12,13 @@
 - Результат: Accepted
 - Скріншот: `screenshots/leetcode/2119_double_reversal_accepted.png`
 
+## 4. Відкрита дискусія
+
+Відповіді на питання відкритої дискусії: [discussion.md](discussion.md)
+
 ## Матеріали
 
+- `discussion.md` — відповіді на питання відкритої дискусії
 - `screenshots/devops/` — скріншоти треку роботи з файлами
 - `screenshots/git/` — скріншоти Git track
 - `screenshots/leetcode/` — скріншоти Accepted з LeetCode
