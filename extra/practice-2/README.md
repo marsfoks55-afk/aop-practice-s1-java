@@ -22,4 +22,3 @@
 - `screenshots/devops/` — скріншоти треку роботи з файлами
 - `screenshots/git/` — скріншоти Git track
 - `screenshots/leetcode/` — скріншоти Accepted з LeetCode
-- `report/` — звіти `.docx`
