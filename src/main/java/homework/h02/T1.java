@@ -3,7 +3,6 @@ package homework.h02;
 // base
 // https://leetcode.com/problems/add-digits/
 public class T1 {
-
     public static class Solution {
         public int addDigits(int num) {
             while (num >= 10) {
