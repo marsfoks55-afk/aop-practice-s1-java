@@ -2,30 +2,30 @@
 
 ### compile
 
-\`\`\`shell
+```shell
 mvn compile
-\`\`\`
+```
 
 ### clean
 
-\`\`\`shell
+```shell
 mvn clean
-\`\`\`
+```
 
 ### test
 
-\`\`\`shell
+```shell
 mvn test
-\`\`\`
+```
 
 ### reformat code
 
-\`\`\`shell
+```shell
 mvn spotless:apply
-\`\`\`
+```
 
 ### check formatting
 
-\`\`\`shell
+```shell
 mvn spotless:check
-\`\`\`
+```
