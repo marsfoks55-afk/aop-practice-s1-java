@@ -4,6 +4,10 @@ package homework.h01;
 // https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/
 public class T2 {
     public int countOdds(int low, int high) {
-        return (high + 1) / 2 - low / 2;
+        int count = (high - low) / 2;
+        if (low % 2 != 0 || high % 2 != 0) {
+            count++;
+        }
+        return count;
     }
 }
