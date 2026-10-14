@@ -1,18 +1,10 @@
+
 package homework.h04;
 
-// base
-// https://leetcode.com/problems/plus-one/
+// LeetCode 461 - Hamming Distance
+// https://leetcode.com/problems/hamming-distance/
 public class T1 {
-    public int[] plusOne(int[] digits) {
-        for (int i = digits.length - 1; i >= 0; i--) {
-            if (digits[i] < 9) {
-                digits[i]++;
-                return digits;
-            }
-            digits[i] = 0;
-        }
-        int[] result = new int[digits.length + 1];
-        result[0] = 1;
-        return result;
+    public int hammingDistance(int x, int y) {
+        return Integer.bitCount(x ^ y);
     }
 }

@@ -1,18 +1,17 @@
+
 package homework.h04;
 
-// advanced
-// https://leetcode.com/problems/integer-to-roman/
+// LeetCode 476 - Number Complement
+// https://leetcode.com/problems/number-complement/
 public class T2 {
-    public String intToRoman(int num) {
-        int[] values = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
-        String[] symbols = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
-        StringBuilder result = new StringBuilder();
-        for (int i = 0; i < values.length; i++) {
-            while (num >= values[i]) {
-                num -= values[i];
-                result.append(symbols[i]);
-            }
-        }
-        return result.toString();
+    public int findComplement(int num) {
+        int mask = num;
+        mask |= mask >> 1;
+        mask |= mask >> 2;
+        mask |= mask >> 4;
+        mask |= mask >> 8;
+        mask |= mask >> 16;
+
+        return num ^ mask;
     }
 }
