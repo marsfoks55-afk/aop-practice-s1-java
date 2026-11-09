@@ -1,2 +1,1 @@
-public class SmallestEvenMultiple {
-}
+public class SmallestEvenMultiple {}

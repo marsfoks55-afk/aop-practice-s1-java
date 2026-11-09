@@ -1,19 +1,22 @@
-// https://leetcode.com/problems/max-consecutive-ones/
+package homework.h09;
 
-class Solution {
-    public int findMaxConsecutiveOnes(int[] nums) {
-        int current = 0;
-        int max = 0;
+public class T1 {
 
-        for (int num : nums) {
-            if (num == 1) {
-                current++;
-                max = Math.max(max, current);
-            } else {
-                current = 0;
-            }
-        }
+  // https://leetcode.com/problems/max-consecutive-ones/
 
-        return max;
+  public int findMaxConsecutiveOnes(int[] nums) {
+    int current = 0;
+    int max = 0;
+
+    for (int num : nums) {
+      if (num == 1) {
+        current++;
+        max = Math.max(max, current);
+      } else {
+        current = 0;
+      }
     }
+
+    return max;
+  }
 }
