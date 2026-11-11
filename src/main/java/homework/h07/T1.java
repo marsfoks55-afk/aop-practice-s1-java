@@ -1,27 +1,18 @@
+package homework.h07;
 
-import java.util.ArrayList;
-import java.util.List;
-
-/**
- * LeetCode 412: Fizz Buzz
- * https://leetcode.com/problems/fizz-buzz/
- */
+// advanced
+// https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero
 public class T1 {
-    public List<String> fizzBuzz(int n) {
-        List<String> result = new ArrayList<>();
-
-        for (int i = 1; i <= n; i++) {
-            if (i % 15 == 0) {
-                result.add("FizzBuzz");
-            } else if (i % 3 == 0) {
-                result.add("Fizz");
-            } else if (i % 5 == 0) {
-                result.add("Buzz");
+    public int numberOfSteps(int num) {
+        int steps = 0;
+        while (num > 0) {
+            if ((num & 1) == 0) {
+                num >>= 1;
             } else {
-                result.add(String.valueOf(i));
+                num--;
             }
+            steps++;
         }
-
-        return result;
+        return steps;
     }
 }

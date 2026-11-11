@@ -1,25 +1,28 @@
+
 package homework.h09;
+
+// LeetCode 1431
+// https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class T2 {
-
-  // LeetCode: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
-
   public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
-    int max = 0;
-
-    for (int candy : candies) {
-      if (candy > max) {
-        max = candy;
-      }
-    }
-
     List<Boolean> result = new ArrayList<>();
 
+    if (candies == null) {
+      return result;
+    }
+
+    int maxCandies = 0;
+
     for (int candy : candies) {
-      result.add(candy + extraCandies >= max);
+      maxCandies = Math.max(maxCandies, candy);
+    }
+
+    for (int candy : candies) {
+      result.add(candy + extraCandies >= maxCandies);
     }
 
     return result;

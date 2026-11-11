@@ -1,3 +1,4 @@
+
 package homework.h10;
 
 // LeetCode 344
@@ -5,6 +6,10 @@ package homework.h10;
 
 public class T2 {
   public void reverseString(char[] s) {
+    if (s == null || s.length < 2) {
+      return;
+    }
+
     int left = 0;
     int right = s.length - 1;
 
