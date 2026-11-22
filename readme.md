@@ -29,3 +29,7 @@ mvn spotless:apply
 ```shell
 mvn spotless:check
 ```
+
+## як запустити
+
+## ¬имоги
